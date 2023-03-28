@@ -62,49 +62,49 @@ function mw_faqhook_page_1666717451586() {
 add_action("wp_head", "mw_faqhook_page_1666717451586");
 
 // Отключаем любые CSS стили плагинов
-function custom_dequeue() {
-    wp_dequeue_style('wpex-style');
-    wp_dequeue_style('tablepress-default');
-    wp_dequeue_style('wpex-tablepress');
-    wp_dequeue_style('mediaelement');
-    wp_dequeue_style('wp-mediaelement');
-    wp_dequeue_style('');
-    wp_dequeue_style('');
-    wp_dequeue_style('wpex-mobile-menu-breakpoint-max');
-    wp_dequeue_style('wpex-mobile-menu-breakpoint-min');
-    wp_dequeue_style('');
-    wp_dequeue_style('ticons');
-    wp_dequeue_style('');
-    wp_dequeue_style('');
-    if ( is_page(10) ) {
-		wp_dequeue_style( 'wpcdt-public-css' );
-        wp_dequeue_style( 'vcex-shortcodes' );
-        wp_dequeue_style( '' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'custom_dequeue', 9999 );
+// function custom_dequeue() {
+//     wp_dequeue_style('wpex-style');
+//     wp_dequeue_style('tablepress-default');
+//     wp_dequeue_style('wpex-tablepress');
+//     wp_dequeue_style('mediaelement');
+//     wp_dequeue_style('wp-mediaelement');
+//     wp_dequeue_style('');
+//     wp_dequeue_style('');
+//     wp_dequeue_style('wpex-mobile-menu-breakpoint-max');
+//     wp_dequeue_style('wpex-mobile-menu-breakpoint-min');
+//     wp_dequeue_style('');
+//     wp_dequeue_style('ticons');
+//     wp_dequeue_style('');
+//     wp_dequeue_style('');
+//     if ( is_page(10) ) {
+// 		wp_dequeue_style( 'wpcdt-public-css' );
+//         wp_dequeue_style( 'vcex-shortcodes' );
+//         wp_dequeue_style( '' );
+// 	}
+// }
+// add_action( 'wp_enqueue_scripts', 'custom_dequeue', 9999 );
 
 //Отключаем любые js скрипты
-function project_dequeue_unnecessary_scripts() {
-    wp_deregister_script('mediaelement-core');
-    wp_deregister_script('mediaelement-migrate');
-    wp_deregister_script('wp-mediaelement');
-    wp_deregister_script('mediaelement-vimeo');
-    wp_deregister_script('');
-    wp_deregister_script('');
-    wp_deregister_script('sidr');
-    wp_deregister_script('hoverintent');
-    wp_deregister_script('supersubs');
-    wp_deregister_script('superfish');
-    wp_deregister_script('easing');
-    if ( is_page(10) ) {
-		wp_dequeue_script( '' );
-        wp_dequeue_script( 'image_zoooom' );
-        wp_dequeue_script( 'image_zoooom-init' );
-        wp_dequeue_script( '' );
-	}
-}
-add_action( 'wp_print_scripts', 'project_dequeue_unnecessary_scripts', 9999 );
+// function project_dequeue_unnecessary_scripts() {
+//     wp_deregister_script('mediaelement-core');
+//     wp_deregister_script('mediaelement-migrate');
+//     wp_deregister_script('wp-mediaelement');
+//     wp_deregister_script('mediaelement-vimeo');
+//     wp_deregister_script('');
+//     wp_deregister_script('');
+//     wp_deregister_script('sidr');
+//     wp_deregister_script('hoverintent');
+//     wp_deregister_script('supersubs');
+//     wp_deregister_script('superfish');
+//     wp_deregister_script('easing');
+//     if ( is_page(10) ) {
+// 		wp_dequeue_script( '' );
+//         wp_dequeue_script( 'image_zoooom' );
+//         wp_dequeue_script( 'image_zoooom-init' );
+//         wp_dequeue_script( '' );
+// 	}
+// }
+// add_action( 'wp_print_scripts', 'project_dequeue_unnecessary_scripts', 9999 );
 
 
 

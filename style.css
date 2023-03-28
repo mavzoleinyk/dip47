@@ -57,6 +57,15 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
     display: none;
 }
 
+.prof__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prof__list li{
+    flex: 1 0 25%;
+}
+
 /* Карточка продукта */
 .product-item{
     background: #fff;
@@ -801,5 +810,9 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
     }
     .question-content{
         flex-direction: column;
+    }
+    .prof__list li{
+        font-size: 13px;
+        flex: 1 0 50%;
     }
 }
