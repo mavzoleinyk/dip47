@@ -42,8 +42,8 @@ get_header(); ?>
         <?php if( is_page(22) ) : get_template_part('parts/section', 'rewiews'); endif;?>
         <?php if( is_page(22) ) : get_template_part('parts/section', 'team'); endif;?>
         <?php if( is_page(22) ) : get_template_part('parts/section', 'number'); endif;?>
-        <?php if( is_page(22) ) : get_template_part('parts/section', 'skills'); endif;?>
         <?php if( is_page(22) ) : get_template_part('parts/section', 'vuz'); endif;?>
+        <?php if( is_page(22) ) : get_template_part('parts/section', 'skills'); endif;?>
         <?php if( is_page(22) ) : get_template_part('parts/section', 'steps'); endif;?>         
 
       </article> <!-- end standard post -->

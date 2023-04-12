@@ -358,12 +358,17 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
 }
 .content-team-item .image{
     margin-bottom: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.content-team-item .image img{
+    width: 100%;
 }
 .team-prof{
-    font-size: 20px;
+    font-size: 16px;
 }
 .team-name{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
 }
 .team-social{
@@ -385,9 +390,9 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
 }
 .info-posts-container p{
     margin-bottom: 0;
-    font-size: 21px;
+    font-size: 16px;
     color: #fff;
-    line-height: 31px;
+    line-height: 24px;
 }
 .info-posts-container p span{
     display: block;
@@ -453,7 +458,7 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
     margin-bottom: 25px;
 }
 .fishka-content{
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* Секция преимущества */
@@ -524,6 +529,11 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
 }
 .rewiews-posts .btn-solid{
     display: inline-block;
+    background: #a92be2;
+    opacity: 0.6;
+}
+.rewiews-posts .btn-solid:hover{
+    opacity: 1;
 }
 
 .rewiews-content{
@@ -550,8 +560,10 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
     text-align: left;
     flex: 1;
     flex-wrap: wrap;
-    border: 1px solid #eeeeef;
+    border: 1px solid transparent;
     border-radius: 5px;
+    background: #a92be2;
+    color: #fff;
 }
 .rewiews-content .rewiews-item:first-of-type{
     margin-left: 0;
@@ -559,25 +571,36 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
 .rewiews-name{
     font-weight: 800;
     font-size: 21px;
+    text-decoration: underline;
 }
 .rewiews-date{
     font-size: 14px;
     margin-bottom: 10px;
 }
 .rewiews-title{
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* Популярные вызу */
+.vuz-posts{
+    text-align: center;
+}
+.vuz-posts .btn-solid{
+    margin: 3rem auto;
+    display: inline-block;
+}
 .vuz-content{
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
 }
 .vuz-item{
-    flex: 1;
-    margin: 0 10px;
+    flex: 1 0 22%;
+    margin: 0 10px 2rem;
     text-align: center;
+    background: #8a2be2;
+    border-radius: 10px;
+    padding: 10px;
 }
 .vuz-item .image{
     margin-bottom: 15px;
@@ -598,6 +621,13 @@ This is the child theme for Total theme, generated with Generate Child Theme plu
 }
 
 /* Популярные специальности */
+.skills-posts{
+    text-align: center;
+}
+.skills-posts .btn-solid{
+    margin-top: 3rem;
+    display: inline-block!important;
+}
 .skills-content{
     display: flex;
     flex-wrap: wrap;

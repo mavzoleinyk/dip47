@@ -53,4 +53,5 @@
             <div class="title">СПбУТУиЭ</div>
         </div>
     </div>
+    <a href="/vse-vuzy/" class="btn-solid">Смотреть все</a>
 </section>
